@@ -103,7 +103,7 @@ if validator:
     for module in finalObj[0]["modules"]:
         arrLessons=module['lessons'].split(',')
         module["lessons"]=list(map(lessonAppender,arrLessons))
-    print finalObj
+    print(finalObj)
         
 else:
     print("vadidation failed, hence existing without creating JSON object")
