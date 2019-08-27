@@ -7,7 +7,7 @@ import json
 def getSheet():
     scope = ['https://spreadsheets.google.com/feeds',
              'https://www.googleapis.com/auth/drive']
-    creds = ServiceAccountCredentials.from_json_keyfile_name(r'C:\Users\C5260086\Desktop\Project\Riyaz\client_secret.json',scope)
+    creds = ServiceAccountCredentials.from_json_keyfile_name(r'<path>\Desktop\Project\Riyaz\client_secret.json',scope)
     client = gspread.authorize(creds)
     
     
